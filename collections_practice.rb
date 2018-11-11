@@ -24,12 +24,12 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  repeat_array=[]
+  new_hash = {}
   array.each do |element|
-    if repeat_array.include?(element)
-      element["count"] += 1
+    if !new_hash.has_key?(element)
+      new_hash[element]=0
     else
-      element["count"] = 1
+      new_hash[element] += 1
     end
   end
 end
