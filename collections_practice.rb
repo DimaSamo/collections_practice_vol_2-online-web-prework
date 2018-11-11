@@ -45,6 +45,9 @@ def merge_data(keys, data)
   keys.each do |object|
     matching = object[:first_name]
     otherObject = data[0][matching]
-    
+    otherObject.each do |key, value|
+      object[key]=value
+    end
+
   end
 end
