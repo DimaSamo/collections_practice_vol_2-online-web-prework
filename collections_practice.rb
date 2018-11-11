@@ -65,7 +65,7 @@ def organize_schools(schools)
   organized_schools={}
   schools.each do |name, data|
     if !organized_schools.has_key?(data[:location])
-
+      organized_schools[data[:location]] = name
     end
   end
 end
