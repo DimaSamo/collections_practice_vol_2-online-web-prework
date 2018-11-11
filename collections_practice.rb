@@ -25,6 +25,7 @@ end
 
 def count_elements(array)
   new_hash = {}
+  new_array = []
   array.each do |element|
     if !new_hash.has_key?(element)
       new_hash[element]=0
@@ -32,5 +33,9 @@ def count_elements(array)
       new_hash[element] += 1
     end
   end
-  new_hash
+  new_hash.each do |key, value|
+    key.each do |key2, value2|
+      new_array.push({key2 => value2, count: value})
+    end
+  end
 end
