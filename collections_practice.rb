@@ -24,7 +24,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  new_hash = {}
+  return_array=[]
   array.each do |element|
     if !new_hash.has_key?(element)
       new_hash[element]=0
@@ -32,8 +32,4 @@ def count_elements(array)
       new_hash[element] += 1
     end
   end
-#  new_hash.map do |key, value|
-#    key[:count] = value
-#  end
-  new_hash
 end
