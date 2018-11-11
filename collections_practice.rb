@@ -42,5 +42,9 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys + data
+  data.map do |k, v|
+    if data.has_value?(k)
+      v[:first_name]=k
+    end
+  end
 end
