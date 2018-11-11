@@ -30,7 +30,7 @@ def count_elements(array)
     if !new_hash.has_key?(element)
       new_hash[element]=1
     else
-      new_hash[element] += 2
+      new_hash[element] += 1
     end
   end
   new_hash.each do |key, value|
