@@ -42,12 +42,4 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys.each do |x|
-    matchingProperty = x[:first_name]
-    puts x
-    x = data[0][matchingProperty]
-    x.each do |key,value|
-      x[key] = value
-    end
-  end
 end
