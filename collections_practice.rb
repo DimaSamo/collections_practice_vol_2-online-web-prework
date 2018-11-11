@@ -52,6 +52,7 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
+  ret_array=[]
   array.map do |object|
     if object.has_value?("cool")
       object
