@@ -53,6 +53,8 @@ end
 
 def find_cool(array)
   array.map do |object|
-    object.has_value?("cool")
+    if object.has_value?("cool")
+      object
+    end
   end
 end
