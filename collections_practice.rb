@@ -43,12 +43,12 @@ end
 
 def merge_data(keys, data)
   keys.each do |object|
-  matchingProperty = object[:first_name]
-  puts object
-  otherObject = data[0][matchingProperty]
+    matchingProperty = object[:first_name]
+    puts object
+    otherObject = data[0][matchingProperty]
 
-  otherObject.each do |property,value|
-    object[property] = value
+    otherObject.each do |property,value|
+      object[property] = value
+    end
   end
-end
 end
