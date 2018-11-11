@@ -1,1 +1,35 @@
 # your code goes here
+def begins_with_r(array)
+  array.all? do |element|
+    element.start_with?("r")
+  end
+end
+
+def contain_a(array)
+  array.select do |element|
+    element.include?("a")
+  end
+end
+
+def first_wa(array)
+  array.find do |element|
+    element[0] == "w" && element[1] == "a"
+  end
+end
+
+def remove_non_strings(array)
+  array.reject! do |element|
+    !element.is_a?(String)
+  end
+end
+
+def count_elements(array)
+  repeat_array=[]
+  array.each do |element|
+    if repeat_array.include?(element)
+      element["count"] += 1
+    else
+      element["count"] = 1
+    end
+  end
+end
