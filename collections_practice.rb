@@ -48,6 +48,5 @@ def merge_data(keys, data)
     otherObject.each do |key, value|
       object[key]=value
     end
-
   end
 end
