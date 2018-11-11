@@ -42,9 +42,13 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  data.map do |k, v|
-    if data.has_value?(k)
-      v[:first_name]=k
-    end
+  keys.each do |object|
+  matchingProperty = object[:first_name]
+  puts object
+  otherObject = data[0][matchingProperty]
+
+  otherObject.each do |property,value|
+    object[property] = value
   end
+end
 end
