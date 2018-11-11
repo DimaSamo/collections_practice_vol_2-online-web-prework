@@ -46,8 +46,8 @@ def merge_data(keys, data)
     matchingProperty = x[:first_name]
     puts x
     x = data[0][matchingProperty]
-    x.each do |property,value|
-      x[property] = value
+    x.each do |key,value|
+      x[property] = key
     end
   end
 end
