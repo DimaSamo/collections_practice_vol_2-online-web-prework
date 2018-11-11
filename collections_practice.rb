@@ -68,4 +68,5 @@ def organize_schools(schools)
       organized_schools[data[:location]] = name
     end
   end
+  organized_schools
 end
