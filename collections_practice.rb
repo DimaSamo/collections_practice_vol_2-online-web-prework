@@ -42,4 +42,9 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
+  keys.each do |object|
+    matching = object[:first_name]
+    otherObject = data[0][matching]
+    
+  end
 end
