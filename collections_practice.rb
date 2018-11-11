@@ -38,4 +38,5 @@ def count_elements(array)
       new_array.push({key2 => value2, count: value})
     end
   end
+  new_array
 end
